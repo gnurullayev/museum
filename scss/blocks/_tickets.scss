@@ -1,0 +1,319 @@
+.tickets {
+    padding: 60px 0;
+}
+
+.tickets__titel {
+    position: relative;
+    margin-bottom: 103px;
+    height: 90px;
+    font-family: $font-forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+}
+
+.tickets__titel::before {
+    position: absolute;
+    bottom: -25px;
+   @include horizantal-line(1440px, 3px, $line-color,)
+}
+
+.tickets__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets__heading {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.tickets__item{
+    margin-bottom: 25px;
+}
+
+.tickets__item {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+
+}
+
+.ticket__amount {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    text-align: center;
+}
+
+.basic,
+.senior {
+    display: inline-block;
+    margin-bottom: 21px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.amount__btn {
+    padding: 0 10px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid $color-black;
+}
+
+.amount__btn button {
+    border: none;
+    background-color: transparent;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+
+.amount__btn span {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+.total {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 1.65px;
+    color: #000000;
+}
+
+.amount__button {
+    padding: 0 30px;
+    width: 175px;
+    height: 50px;
+    background-color: $color-black;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+@include breakpoint-down(1320px) {
+    .tickets {
+        padding: 40px 0;
+    }
+    
+    .tickets__titel {
+        margin-bottom: 83px;
+        height: 75px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+    }
+    
+    .tickets__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tickets__type{
+        display: none;
+    }
+    
+    .ticket__amount {
+        margin-bottom: 39px;
+    }
+    
+    .basic,
+    .senior {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .amount__btn {
+        padding: 0 10px;
+        width: 175px;
+    }
+    
+    .total {
+        margin-top: 39px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@include breakpoint-down(1320px) {
+    .tickets {
+        padding: 40px 0;
+    }
+    
+    .tickets__titel {
+        margin-bottom: 83px;
+        height: 75px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+    }
+    
+    .tickets__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tickets__type{
+        display: none;
+    }
+    
+    .ticket__amount {
+        margin-bottom: 39px;
+    }
+    
+    .basic,
+    .senior {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .amount__btn {
+        padding: 0 10px;
+        width: 175px;
+    }
+    
+    .total {
+        margin-top: 39px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@include breakpoint-down(930px) {
+    .tickets {
+        padding: 40px 0;
+    }
+    
+    .tickets__titel {
+        margin-bottom: 63px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .tickets__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tickets__type{
+        display: none;
+    }
+    
+    .ticket__amount {
+        margin-bottom: 39px;
+    }
+    
+    .basic,
+    .senior {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .amount__btn {
+        padding: 0 10px;
+        width: 175px;
+    }
+    
+    .total {
+        margin-top: 39px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+
+
+
+@include breakpoint-down(660px) {
+    .tickets__titel {
+        margin-bottom: 63px;
+        height: 40px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    .tickets__content{
+        display: block;
+    }
+
+    .tickets__left {
+        display: block;
+        width: 444px;
+        height: 340px;
+        margin: 0 auto;
+    }
+
+    .tickets__img {
+        width: 100%;
+        max-width: 444px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .tickets__type{
+        display: none;
+    }
+    
+    .tickets__right{
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 200px;
+        // text-align: center;
+    }
+    
+    .ticket__amount {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .basic,
+    .senior {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+    }
+    
+    .amount__btn {
+        margin-bottom: 20px;
+        padding: 0 10px;
+        width: 175px;
+    }
+    
+    .total {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+}

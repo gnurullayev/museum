@@ -1,6 +1,5 @@
 .hero {
     min-height: 842px;
-    background-color: $color-black;
     z-index: 2;
 }
 
@@ -53,23 +52,12 @@
 }
 
 .hero__button {
+    display: inline-block;
     width: 360px;
     height: 75px;
-    padding: 0 64px;
+    padding: 25px 64px;
     background-color: $line-color;
     border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all .4s linear;
-}
-
-.hero__button:hover {
-    transition: all .4s linear;
-    background-color: $hover-color;
-}
-
-.hero__button-link {
-    height: 100%;
     font-family: $font-roboto;
     font-style: normal;
     font-weight: 300;
@@ -77,7 +65,13 @@
     line-height: 26px;
     text-align: center;
     letter-spacing: 2px;
-    color: #FFFFFF;
+    color: $color;
+    transition: all .4s linear;
+}
+
+.hero__button:hover {
+    transition: all .4s linear;
+    background-color: $hover-color;
 }
 
 .slider__content {
@@ -308,7 +302,6 @@
     }
     
     .hero__description {
-        font-weight: 276px;
         font-size: 16px;
         line-height: 19px;
     }

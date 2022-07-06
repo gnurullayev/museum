@@ -1,0 +1,169 @@
+.contact {
+    padding: 75px 0;
+}
+
+.contact__title {
+    position: relative;
+    margin-bottom: 103px;
+    height: 90px;
+    font-family: $font-forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+}
+
+.contact__title::before {
+    position: absolute;
+    bottom: -25px;
+   @include horizantal-line(1440px, 3px, $line-color,)
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__text {
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 250px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.contact__item {
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+@include breakpoint-down(1400px) {
+    .contact__map-img{
+        width: 100%;
+        max-width: 900px;
+    }
+}
+ 
+@include breakpoint-down(1320px) {
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .contact__title {
+        margin-bottom: 83px;
+        height: 75px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+    }
+    
+    .contact__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact__text {
+        margin-bottom: 35px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .contact__item {
+        margin-bottom: 15px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .contact__map-img{
+        width: 100%;
+        max-width: 694px;
+    }
+}
+
+@include breakpoint-down(930px){
+    .contact {
+        padding: 40px 0;
+    }
+    
+    .contact__title {
+        margin-bottom: 63px;
+        height: 60px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .contact__content {
+        display: block;
+    }
+    
+    .contact__text {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    
+    .contact__item {
+        margin-bottom: 15px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .contact__map{
+        margin: 0 auto;
+        display: block;
+        max-width: 728px;
+    }
+
+    .contact__map-img{
+        margin-top: 25px;
+        width: 100%;
+        max-width: 694px;
+    }
+}
+
+@include breakpoint-down(420px){   
+    .contact__title {
+        margin-bottom: 63px;
+        height: 60px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    .contact__content {
+        display: block;
+    }
+    
+    .contact__text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .contact__item {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .contact__map{
+        margin: 0 auto;
+        display: block;
+        max-width: 728px;
+    }
+
+    .contact__map-img{
+        margin-top: 25px;
+        width: 100%;
+        max-width: 694px;
+    }
+}
