@@ -484,6 +484,7 @@ a {
 .hero {
   min-height: 842px;
   z-index: 2;
+  background-color: #000000;
 }
 
 .hero__inner {
@@ -641,7 +642,7 @@ a {
   .hero__button {
     width: 300px;
     height: 60px;
-    padding: 0 44px;
+    padding: 18px 44px;
   }
 
   .hero__button-link {

@@ -1,6 +1,7 @@
 .hero {
     min-height: 842px;
     z-index: 2;
+    background-color: $color-black;
 }
 
 .hero__inner {
@@ -159,7 +160,7 @@
     .hero__button {
         width: 300px;
         height: 60px;
-        padding: 0 44px;
+        padding: 18px 44px;
     }
     
     .hero__button-link {
