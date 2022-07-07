@@ -1,0 +1,249 @@
+@include breakpoint-down(1110px) {
+
+    .nav {
+        position: absolute;
+        // bottom: 0;
+        top: 110px;
+        z-index: 2;
+        width: 100%;
+        min-height: 861px;
+        background-color: black;
+        padding: 0 20px;
+    
+        &__list {
+            
+            display: block;           
+            margin-left: 55px;
+            margin-bottom: 35px;
+        }
+
+        &__item {
+            position: relative;
+            width:100px;
+            // border: 1px solid red;
+
+        }
+
+        &__item::after {
+            position: absolute;
+            right: -28px;
+            top: 8px;
+            width: 8px;
+            height: 12px;
+            background-image: url(../../imgs/chevron-right.png);
+            background-size: cover;
+            content: "";
+        }
+    
+        &__item:first-child {
+            margin-top: 35px;
+        }
+    
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 25px;
+        }
+    
+        &__link {
+            position: relative;
+            font-family: $font-roboto;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 2px;
+            color: $color;
+
+            transition: all .4s linear;
+        }
+
+        &__link::after {
+            position: absolute;
+
+        }
+        
+    }
+
+    .nav__imgs {
+        max-width: 658px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .nav__img:first-child {
+        width: 100%;
+        max-width: 658px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .nav__img:first-child img {
+        width: 100%;
+        max-width: 658px;
+    }
+
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 319px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        width: 100%;
+        max-width: 319px;
+    }
+
+    .nav__social-networks {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .link-icon path {
+        transition: all .4s linear;
+        fill: $color;
+    }
+    
+    .link-icon:hover path {
+        transition: all .4s linear;
+        fill: $hover-color;
+    }
+}
+
+@include breakpoint-down(682px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 300px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 300px;
+    }
+}
+
+@include breakpoint-down(682px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 280px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 280px;
+    }
+}
+
+@include breakpoint-down(610px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 260px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 260px;
+    }
+}
+
+@include breakpoint-down(567px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 240px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 240px;
+    }
+}
+
+@include breakpoint-down(530px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 220px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 220px;
+    }
+}
+
+@include breakpoint-down(490px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 200px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 200px;
+    }
+}
+
+@include breakpoint-down(450px) {
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 185px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 185px;
+    }
+}
+
+
+
+@include breakpoint-down(420px) {
+    .nav {
+        top: 90px;
+        width: 100%;
+        min-height: 544px;
+    }
+
+    .nav__imgs {
+        margin-bottom: 44px;
+        flex-wrap: nowrap;
+    }
+
+    .nav__img:first-child {
+        max-width:90px;
+        margin: 0 ;
+    }
+
+    .nav__img:first-child img {
+        width: 100%;
+        max-width: 90px;
+    }
+
+    .nav__img:nth-child(2),
+    .nav__img:nth-child(3) {
+        max-width: 90px;
+    }
+
+    .nav__img:nth-child(2) img,
+    .nav__img:nth-child(3) img {
+        max-width: 90px;
+    }
+
+    .nav__social-networks {
+        width: 260px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+

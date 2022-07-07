@@ -21,7 +21,11 @@
         display: flex;
     }
 
-    &__item +    &__item {
+    &__item {
+        transition: all .4s linear;
+    }
+
+    &__item + &__item {
         margin-left: 65px;
     }
 
@@ -55,6 +59,9 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+
+
 .header__menu-oppen {
     width: 32px;
     height: 18px;
@@ -72,12 +79,17 @@
 }
 
 @include breakpoint-down(1110px) {
-    .header__nav {
-        display: none;
+    .nav {
+        left: -100%;
+        transition: all .4s linear;
     }
 
     .header__button {
         display: block;
+    }
+
+    .clouse {
+        display: none;
     }
 
 }
