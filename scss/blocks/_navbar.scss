@@ -10,8 +10,7 @@
         background-color: black;
         padding: 0 20px;
     
-        &__list {
-            
+        &__list {           
             display: block;           
             margin-left: 55px;
             margin-bottom: 35px;
@@ -62,6 +61,11 @@
 
         }
         
+    }
+
+    .nav__imgs,
+    .nav__social-networks {
+       display: block;
     }
 
     .nav__imgs {

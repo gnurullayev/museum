@@ -436,6 +436,11 @@ a {
   color: #7e6c51;
 }
 
+.nav__imgs,
+.nav__social-networks {
+  display: none;
+}
+
 .header__button {
   display: none;
   border: none;
@@ -538,6 +543,11 @@ a {
   }
   .nav__link::after {
     position: absolute;
+  }
+
+  .nav__imgs,
+.nav__social-networks {
+    display: block;
   }
 
   .nav__imgs {
